@@ -28,4 +28,11 @@ vim.api.nvim_set_keymap("n", "<Leader>cw", ":set wrap!<CR>", {
 })
 
 -- Bind Shift+Enter to create a new line below in insert mode
-vim.keymap.set("i", "<S-CR>", "<Esc>o", { desc = "Insert new line below" })
+vim.keymap.set("i", "<C-CR>", "<Esc>o", { desc = "Insert new line below", noremap = true, silent = true })
+vim.keymap.set("n", "<C-CR>", "o<Esc>", { desc = "Insert new line below", noremap = true, silent = true })
+
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
+vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
+vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
