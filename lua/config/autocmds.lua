@@ -21,6 +21,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
+--dsfsfs
 -- AutoSaveOnFocusLost
 local group = vim.api.nvim_create_augroup("AutoSaveOnFocusLost", { clear = true })
 vim.api.nvim_create_autocmd({ "FocusLost", "BufLeave" }, {

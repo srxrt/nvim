@@ -30,3 +30,17 @@ vim.api.nvim_set_keymap("n", "<Leader>cw", ":set wrap!<CR>", {
 -- Bind Shift+Enter to create a new line below in insert mode
 vim.keymap.set("i", "<C-CR>", "<Esc>o", { desc = "Insert new line below", noremap = true, silent = true })
 vim.keymap.set("n", "<C-CR>", "o<Esc>", { desc = "Insert new line below", noremap = true, silent = true })
+vim.keymap.set(
+  "n",
+  "<leader>uR",
+  ":source $MYVIMRC<CR>",
+  { desc = "Source neovim configuration changes", noremap = true, silent = true }
+)
+
+--enable hidden files for grepping
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>h",
+  ":lua require('fzf-lua').files({ hidden = not require('fzf-lua').config().files.hidden })<CR>",
+  { noremap = true, silent = true }
+)
