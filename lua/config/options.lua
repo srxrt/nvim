@@ -4,9 +4,10 @@
 -- Add any additional options here
 vim.opt.winbar = "%=%m %f"
 vim.g.lazyvim_cmp = "nvim-cmp"
+vim.g.lazyvim_picker = "fzf"
 
 local opt = vim.opt
-opt.autowrite = true -- Enable auto write
+opt.autowriteall = true -- Enable auto write
 -- Wrap lines at 80 characters
 vim.o.textwidth = 80
 vim.o.wrap = true
