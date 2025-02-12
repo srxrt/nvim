@@ -21,19 +21,6 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
---dsfsfs
--- AutoSaveOnFocusLost
-local group = vim.api.nvim_create_augroup("AutoSaveOnFocusLost", { clear = true })
-vim.api.nvim_create_autocmd({ "FocusLost", "BufLeave" }, {
-  group = group,
-  pattern = "*",
-  callback = function()
-    if vim.bo.modified and vim.bo.filetype ~= "neo-tree" then
-      vim.cmd("silent! write")
-    end
-  end,
-})
-
 -- autosave session
 vim.api.nvim_create_autocmd("VimLeavePre", {
   callback = function()

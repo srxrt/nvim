@@ -7,12 +7,6 @@ return {
       window = {
         width = 30,
       },
-      on_attach = function(bufnr)
-        -- Ensure the buffer is modifiable
-        vim.bo[bufnr].modifiable = true
-      end,
     },
   },
 }
-
---24/12/2024

@@ -2,7 +2,12 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 -- Keybinding for showing the hover tooltip
-vim.api.nvim_set_keymap("n", "gh", ":lua vim.lsp.buf.hover()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+  "n",
+  "gh",
+  ":lua vim.lsp.buf.hover()<CR>",
+  { desc = "Show tooltip", noremap = true, silent = true }
+)
 -- Set timeout for key sequences to 300ms
 vim.o.timeoutlen = 300
 -- Bind `kk` to exit Insert mode
