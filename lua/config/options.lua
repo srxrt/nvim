@@ -3,7 +3,6 @@
 
 -- Add any additional options here
 vim.opt.winbar = "%=%m %f"
-vim.g.lazyvim_cmp = "nvim-cmp"
 vim.g.lazyvim_picker = "fzf"
 
 local opt = vim.opt
