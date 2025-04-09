@@ -1,6 +1,4 @@
 return {
-  -- This is what powers LazyVim's fancy-looking
-  -- tabs, which include filetype icons and close buttons.
   {
     "akinsho/bufferline.nvim",
     event = "VeryLazy",
@@ -33,9 +31,9 @@ return {
         offsets = {
           {
             filetype = "neo-tree",
-            text = "Neo-tree",
+            text = "RUXCODES",
             highlight = "Directory",
-            text_align = "left",
+            text_align = "center",
           },
           {
             filetype = "snacks_layout_box",
