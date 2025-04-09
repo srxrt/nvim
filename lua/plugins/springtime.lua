@@ -44,7 +44,7 @@ return {
     -- Some popup options
     dialog = {
       -- The keymap used to select radio buttons (normal mode)
-      selection_keymap = "<C-Space>",
+      selection_keymap = "<C-x>",
 
       -- The keymap used to generate the Spring project (normal mode)
       generate_keymap = "<C-CR>",

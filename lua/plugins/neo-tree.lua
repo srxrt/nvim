@@ -5,7 +5,7 @@ return {
       hijack_netrw = true,
       use_libuv_file_watcher = true,
       window = {
-        width = 30,
+        width = 25,
       },
     },
   },

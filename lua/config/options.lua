@@ -1,7 +1,4 @@
 -- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
-
--- Add any additional options here
 vim.opt.winbar = "%=%m %f"
 vim.g.lazyvim_picker = "fzf"
 
@@ -17,6 +14,7 @@ vim.o.autoread = true -- Automatically read files when changed externally
 vim.o.scrolloff = 0
 vim.o.smoothscroll = false
 vim.g.snacks_animate = false
+vim.g.lazyvim_cmp = "nvim-cmp"
 
 -- format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
