@@ -4,6 +4,7 @@ vim.g.lazyvim_picker = "fzf"
 
 local opt = vim.opt
 opt.autowriteall = true -- Enable auto write
+
 -- Wrap lines at 80 characters
 vim.o.textwidth = 80
 vim.o.wrap = true
@@ -16,6 +17,7 @@ vim.g.snacks_animate = false
 vim.g.lazyvim_cmp = "nvim-cmp"
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+
 -- format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = { "*.js", "*.ts", "*.jsx", "*.tsx", "*.json", "*.css", "*.scss", "*.html", "*.md" }, -- Add your file types

@@ -31,7 +31,7 @@ return {
         offsets = {
           {
             filetype = "neo-tree",
-            text = "RUXCODES",
+            text = "viminizer",
             highlight = "Directory",
             text_align = "center",
           },
