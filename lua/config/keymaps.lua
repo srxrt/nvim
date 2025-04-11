@@ -11,8 +11,8 @@ vim.api.nvim_set_keymap("i", "kk", "<Esc>", { desc = "Escape", noremap = true, s
 --
 -- Map keys to create new lines above or below the cursor
 
-vim.api.nvim_set_keymap("n", "<leader>o", "o<Esc>", { desc = "Insert new line below", noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>O", "O<Esc>", { desc = "Insert new line above", noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "<leader>o", "o<Esc>", { desc = "Insert new line below", noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "<leader>O", "O<Esc>", { desc = "Insert new line above", noremap = true, silent = true })
 
 vim.keymap.set("n", "<C-h>", ":TmuxNavigateLeft<CR>")
 vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<CR>")
