@@ -10,12 +10,12 @@ vim.o.wrap = true
 
 -- Enable auto-reloading of files that have been modified externally
 vim.o.autoread = true -- Automatically read files when changed externally
-
 vim.o.scrolloff = 0
 vim.o.smoothscroll = false
 vim.g.snacks_animate = false
 vim.g.lazyvim_cmp = "nvim-cmp"
-
+vim.opt.autoindent = true
+vim.opt.smartindent = true
 -- format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = { "*.js", "*.ts", "*.jsx", "*.tsx", "*.json", "*.css", "*.scss", "*.html", "*.md" }, -- Add your file types
@@ -23,9 +23,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     vim.lsp.buf.format({ async = false })
   end,
 })
-
-vim.opt.autoindent = true
-vim.opt.smartindent = true
 
 -- Configure diagnostics to use floating windows
 vim.diagnostic.config({
