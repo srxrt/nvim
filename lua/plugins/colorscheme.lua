@@ -4,8 +4,21 @@ return {
     name = "catppuccin",
     lazy = false, -- Load immediately
     priority = 1000, -- High priority to apply first
-    config = function()
-      vim.cmd.colorscheme("catppuccin-mocha") -- Change to desired Catppuccin variant
-    end,
+    opts = {
+      flavor = "moch",
+      transparent_background = true,
+      styles = {
+        comments = { "bold" },
+      },
+      interactions = {
+        cmp = true,
+        nvimtree = true,
+        treesitter = true,
+        mini = {
+          enabled = true,
+          indentscope_color = "",
+        },
+      },
+    },
   },
 }

@@ -15,8 +15,21 @@ vim.o.scrolloff = 0
 vim.o.smoothscroll = false
 vim.g.snacks_animate = false
 vim.g.lazyvim_cmp = "nvim-cmp"
+
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+vim.opt.tabstop = 4 -- Number of visual spaces per TAB
+vim.opt.shiftwidth = 4 -- Indentation amount for autoindents
+vim.opt.expandtab = false -- Use tabs instead of spaces
+vim.opt.smarttab = true
+vim.opt.cursorline = true
+vim.opt.undofile = true
+vim.opt.mouse = "a"
+vim.opt.showmode = false
+vim.opt.breakindent = true
+vim.opt.signcolumn = "yes"
+vim.opt.inccommand = "split"
+vim.opt.scrolloff = 7
 
 -- format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
