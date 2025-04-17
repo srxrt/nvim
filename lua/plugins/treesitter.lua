@@ -45,9 +45,9 @@ return {
       incremental_selection = {
         enable = true,
         keymaps = {
-          init_selection = "<Enter>",
           node_incremental = "<Enter>",
           scope_incremental = false,
+          init_selection = "<Enter>",
           node_decremental = "<Backspace>",
         },
       },
@@ -56,18 +56,20 @@ return {
           enable = true,
           lookahead = true,
           keymaps = {
+            ["ac"] = "@class.outer",
             ["af"] = "@function.outer",
             ["if"] = "@function.inner",
-            ["ac"] = "@class.outer",
             ["ic"] = "@class.inner",
           },
         },
-        move = {
+        swap = {
           enable = true,
-          goto_next_start = { ["]f"] = "@function.outer", ["]c"] = "@class.outer", ["]a"] = "@parameter.inner" },
-          goto_next_end = { ["]F"] = "@function.outer", ["]C"] = "@class.outer", ["]A"] = "@parameter.inner" },
-          goto_previous_start = { ["[f"] = "@function.outer", ["[c"] = "@class.outer", ["[a"] = "@parameter.inner" },
-          goto_previous_end = { ["[F"] = "@function.outer", ["[C"] = "@class.outer", ["[A"] = "@parameter.inner" },
+          swap_next = {
+            ["<leader>j"] = "@parameter.inner",
+          },
+          swap_previous = {
+            ["<leader>k"] = "@parameter.inner",
+          },
         },
       },
     },
